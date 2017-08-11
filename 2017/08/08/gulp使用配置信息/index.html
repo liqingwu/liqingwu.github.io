@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>gulp配置信息 | Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###配置gulp ####先安装好各个依赖的插件    1.首先安装node环境，安装gulp插件使用npm进行    2.进入工作目录，在此处打开命令行    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件    4.通过npm安装各个gulp的插件    npm install gulp –save-dev //基础库    npm install">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp配置信息">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/gulp使用配置信息/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="###配置gulp ####先安装好各个依赖的插件    1.首先安装node环境，安装gulp插件使用npm进行    2.进入工作目录，在此处打开命令行    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件    4.通过npm安装各个gulp的插件    npm install gulp –save-dev //基础库    npm install">
+<meta property="og:updated_time" content="2017-08-11T10:12:25.917Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gulp配置信息">
+<meta name="twitter:description" content="###配置gulp ####先安装好各个依赖的插件    1.首先安装node环境，安装gulp插件使用npm进行    2.进入工作目录，在此处打开命令行    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件    4.通过npm安装各个gulp的插件    npm install gulp –save-dev //基础库    npm install">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lee</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lee</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lee</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-gulp使用配置信息" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/gulp使用配置信息/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gulp配置信息
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###配置gulp</p>
+<p>####先安装好各个依赖的插件<br>    1.首先安装node环境，安装gulp插件使用npm进行<br>    2.进入工作目录，在此处打开命令行<br>    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件<br>    4.通过npm安装各个gulp的插件<br>    npm install gulp –save-dev //基础库<br>    npm install gulp-htmlmin –save-dev  //html压缩<br>    npm install gulp-csso –save-dev  //css压缩<br>    npm install jshint gulp-jshint –save-dev  //js检查<br>    npm install gulp-uglify –save-dev  //js压缩<br>    npm install gulp-concat –save-dev  //文件合并<br>    npm install gulp-clean –save-dev  //清空文件夹<br>    npm install gulp-imagemin –save-dev  //图片压缩<br>    npm install gulp-rename –save-dev  //文件重命名<br>    npm install gulp-rev –save-dev  //更改版本名<br>    npm install gulp-rev-collector –save-dev<br>    //gulp-rev的插件，用于HTML模板更改引用路径</p>
+<p>####在当前文件夹的根目录下建立gulpfile.js文件，进行配置<br>    1.首先将各个依赖的插件引入<br>    var gulp = require(‘gulp’),  //基础库<br>        htmlmin = require(‘gulp-htmlmin’),//html压缩<br>        csso = require(‘gulp-csso’), //css压缩<br>        jshint = require(‘gulp-jshint’), //js检查<br>        uglify = require(‘gulp-uglify’), //js压缩<br>        concat = require(‘gulp-concat’), //文件合并<br>        clean = require(‘gulp-clean’), //清空文件夹<br>        imagemin = require(‘gulp-imagemin’), //图片压缩<br>        rename = require(‘gulp-rename’), //文件重命名<br>        rev = require(‘gulp-rev’), //更改版本名<br>        revCollector = require(‘gulp-rev-collector’); //gulp-rev的插件，用于HTML模板更改引用路径<br>    2.开始配置任务<br>    // 1.html压缩   htmlmin使用<br>        gulp.task(‘html’, function () {  //task方法是创建任务的实现方式<br>            var options = {<br>                collapseWhitespace:true,<br>                collapseBooleanAttributes:true,<br>                removeComments:true,<br>                removeEmptyAttributes:true,<br>                removeScriptTypeAttributes:true,<br>                removeStyleLinkTypeAttributes:true,<br>                minifyJS:true,<br>                minifyCSS:true<br>            };<br>            return gulp.src(‘index.html’)<br>            //src方法获取文件，此处获取同文件夹下的index，html文件<br>                .pipe(htmlmin(options)) //去除html中的空白符<br>                .pipe(gulp.dest(‘dist/‘));<br>                //dest方法，指定压缩后的文件存放路径，此时：如果没有dist文件夹会自动创建<br>        });<br>        //2.css压缩<br>        gulp.task(‘styles’, function () {<br>            return gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>                .pipe(csso()) //  压缩css代码<br>                // 此处不要修改文件名称，不然下面rev任务自动替换引用文件时会找不到要替换的内容<br>                // .pipe(rename(function (path) {<br>                //     path.basename += ‘.min’;<br>                //     path.extname = ‘.css’<br>                // }))<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/css’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/css’));<br>        });<br>        // 3.js语法检测、代码合并、压缩<br>        gulp.task(‘scripts’, function () {<br>            //合并操作的方法，此处不执行<br>            //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>            //.pipe(concat(‘all.js’))  //合并后名称<br>            return gulp.src(‘./js/</em>.js’)<br>                .pipe(jshint()) // 进行检查<br>                .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>                .pipe(uglify())   //js代码压缩<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/js’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/js’));<br>        });<br>        // 4.图片:压缩<br>        gulp.task(‘images’, function() {<br>            gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>                .pipe(imagemin())<br>                .pipe(gulp.dest(‘dist/images’))<br>        });<br>        //5. rev使用，自动改变HTML文件中的引用路径<br>        gulp.task(‘rev’,function () {<br>            return gulp.src([‘./rev/<em>*/</em>.json’,’./dist/index.html’])<br>                .pipe(revCollector({<br>                    replaceReved:true<br>                }))<br>                .pipe(rename(function (path) {<br>                    path.basename += ‘.min’;<br>                    path.extname = ‘.html’<br>                }))<br>                .pipe(gulp.dest(‘./dist’));<br>        });<br>        // 主任务，只需在命令行执行此任务就能实现压缩代码，rev任务除外<br>        gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’,’images’, ‘rev’], function () {<br>            //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>            //的任务，然后再执行下面的代码(称之为任务依赖)<br>            //当指定的文件发送改变时执行指定任务<br>            gulp.watch(‘./index.html’, [‘html’]);<br>            gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>            gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        });</p>
+<p>###注意：在执行完default主任务后没有实现HTML中路径自动改变，需要单独执行rev任务才能为HTML引入的文件自动加上版本号</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/08/gulp/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          gulp
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/08/seajs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">seajs</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="gulp使用配置信息" data-title="gulp配置信息" data-url="http://yoursite.com/2017/08/08/gulp使用配置信息/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="gulp配置信息">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2017 Lee
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

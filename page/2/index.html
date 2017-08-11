@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lee</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lee</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lee</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-es6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/es6/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/es6/">
+        es6
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###constructor中super的用法<br>    调用super的原因：在ES6中，在子类的constructor中必须先调用super才能引用this<br>    super(props)的目的：在constructor中可以使用this.props</p>
+<p>###componentWillMount，componentDidMount有什么用处<br>    componentWillMount在页面被渲染之前执行，也就是在render方法之前执行，我一般在componentWillMount中触发 请求数据的方法。componentDidMount类似js中的window.onload，执行在render方法之后，也就是页面的组件渲染完毕之后</p>
+<p>###react中组件必须为大写开头<br>    您正在使用没有大写字母的React组件。React将其解释为DOM标签，因为React JSX转换使用大小写约定来区分用户定义的组件和DOM标签。</p>
+<p>###通常你会在一个组件中渲染列表。我们可以将前面的例子重构成接受一个数组的数组numbers并输出一个无序的元素列表。当您运行此代码时，您将被给予一个警告，以便为列表项提供一个密钥。“key”是创建元素列表时需要包含的特殊字符串属性,页面中key不会被渲染出来<br>    function NumberList(props) {<br>      const numbers = props.numbers;<br>      const listItems = numbers.map((number) =&gt;<br>        <li key="{number.toString()}"><br>          {number}<br>        </li><br>      );<br>      return (<br>        <ul>{listItems}</ul><br>      );<br>    }<br>    const numbers = [1, 2, 3, 4, 5];<br>    ReactDOM.render(<br>      <numberlist numbers="{numbers}">,<br>      document.getElementById(‘root’)<br>    );</numberlist></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/正则表达式/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/正则表达式/">
+        正则表达式
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###验证金额的正则表达式,保留两位小数<br>    var reg = /(^<a href="[0-9]{0,4}">1-9</a>?(.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9].<a href="[0-9]">0-9</a>?$)/</p>
+<p>###手机号码<br>    /^(1[34578])\d{9}$/</p>
+<p>###图片验证码<br>    /^[a-zA-Z0-9]{4}$/</p>
+<p>###登录密码<br>    /^\w{8,16}$/</p>
+<p>###短信验证码<br>    /^\d{6$/</p>
+<p>###银行卡号<br>    /^\d{16,23}$/</p>
+<p>###身份证号<br>    /^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/</p>
+<p>###交易密码<br>    /^\d{6}$/</p>
+<p>###姓名验证<br>    /^([\u4e00-\u9fa5]{2,4})$/</p>
+<p>##规则<br>    一.失去焦点时做一次校验<br>    二.交易密码和金额输入时需要做处理<br>    三.提交时需要做一次验证<br>    四.封装基本处理函数,传入输入框元素,验证不通过时显示错误信息,并返回true或false</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-angular" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/angular/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/angular/">
+        angular
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###监听页面锚点值变化的事件<br>    hashchange 用于监听是否发生了锚点改变</p>
+<p>###获取锚点值<br>    location.hash   location中的hash属性就是页面的锚点值</p>
+<p>###angular简介<br>    angular是一款非常优秀的前端高级框架，其核心通过指令扩展了html，通过<br>    表达式绑定数据到html。在angular中是不推荐使用dom操作的，因为angular倡导<br>    以测试驱动开发，在service或controller中出现了DOM操作，那么就意味着测试是<br>    无法通过的。使用框架可以轻松实现SPA(单页应用)应用程序。</p>
+<p>###angular安装<br>    1.暴力安装：直接复制一个angular.js<br>    2.npm方式：npm install angular@1.5.2安装指定版本的<br>    3.bower 方式 ‘npm install angular’</p>
+<p>###指令<br>    1.ng-app指令告诉angularjs应用当前这个元素是根元素，所有angularjs都<br>    必须有一个根元素，当有多个ng-app指令，只有第一个会使用<br>    2.ng-model把对应的值显示到页面中：例ng-model=”var”<br>    3.ng-click用来注册点击事件：例ng-click=”add()”<br>    4.ng-init用于初始化某个变量：例ng-init=”var= ‘小明’”</p>
+<p>###将ng-model值显示到页面中<br>    1.2.htllo:undefined3.3 4.1,2,3,45.[object Object]</p>
+<p>###什么是MVC思想和MVVM思想<br>    M：Model 模型：数据存储，一些业务逻辑<br>    V：View 视图 ：用来展示数据<br>    C Controller 控制器：调度业务逻辑<br>    VM ViewModel </p>
+<p>###angular核心特性<br>    1.模块化 angular.module()<br>    angular.module(‘myApp’,[])<br>    第一个参数是模块的名字<br>    第二个是一个数组，数组的元素是该模块所依赖的其他模块的名字，若无依赖，传空数组<br>    2.控制器controller<br>    angular.moule(‘myApp’,[]).controller(‘myController’,function($scope){}));<br>    第一个参数是控制器的名字<br>    第二个参数是一个回调函数，传入参数$scope($scope对象在angularjs中充当数据模型的作用，也就是一般MVC框架中Model的角色，但与通常意义上的数据模型不一样，<br>       因为$scope并不处理和操作数据，他只是建立了视图和html之间的桥梁，让视图和controller之间可以友好的通讯)<br>    2.双向数据绑定<br>    数据模型的值发生改变，就会导致页面值的改变，页面值的改变就会导致数据模型值<br>    的改变，这种相互影响的关系叫双向数据绑定。</p>
+<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><pre><code>- AngularJS 1.x 官方网站
+  + https://angularjs.org/
+- AngularJS 2.x 官方网站
+  + https://angular.io/
+- Google Material Design for Angular
+  + https://material.angularjs.org
+- Angular UI（Angular最大的第三方社区）
+  + http://angular-ui.github.io/
+- AngularJS中文社区
+  + http://www.angularjs.cn/
+- AngularJS中文社区提供的文档（不用翻墙）
+  + http://docs.angularjs.cn/api
+ + http://www.apjs.net/
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-canvas" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/canvas/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/canvas/">
+        canvas
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##canvas是一个画布，默认大小是300*150</p>
+<pre><code>如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小
+</code></pre><p>##想要在canvas上绘图，必须得到canvas绘图工具</p>
+<pre><code>var ctx = canvas.getContext(&quot;2d&quot;);   2d 平面绘图    webgl 3d绘图
+ctx.moveTo(100,100);//将绘图工具定点到100,100位置
+ctx.lineTo(200,100);//从刚才位置绘制到哪里
+ctx.stroke();描边绘图，将绘制的图形呈递出来
+</code></pre><p>##ctx.fill()</p>
+<pre><code>调用fill方法，会将所有的点连接起来，即使没有结束的那条线，也会构成一个封闭的结构
+</code></pre><p>###ctx.closePath() </p>
+<pre><code>闭合路径方法，可以将结束点与开始点连接起来
+ctx.lineWidth = num：用来设置线条的宽度  num是宽度
+</code></pre><p>###ctx.beginPath() </p>
+<pre><code>在canvas中开启新的内容，不影响上一次绘制
+</code></pre><p>###虚线</p>
+<pre><code>ctx.setLineDash(arr)   arr中存在着实线部分和虚线部分
+</code></pre><p>###颜色</p>
+<pre><code>ctx.strokeStyle= &apos;red&apos;;  设置描边颜色
+ctx.fillStyle= &apos;red&apos;;  设置填充颜色
+</code></pre><p>##绘制矩形</p>
+<pre><code>如果不设置style，不需要设置beginPath
+ctx.rect(x,y,width,height);   虚描，需要描边  x,y起始点
+ctx.strokeRect(x,y,width,height);   直接画矩形
+ctx.fillRect(x,y,width,height);   填充矩形
+ctx.clearRect(x,y,width,height); 清除绘制的矩形区域,橡皮擦功能
+ctx.clearRect(0,0,cas.width,cas.height);清除整个画布
+cas.width = cas.width;  相当于把画布刷新，也可以清除整个画布
+</code></pre><p>##绘制圆弧</p>
+<pre><code>ctx.arc(x,y,r,startAngle,endAngle,clockWise);   需要描边呈现
+x,y圆心坐标;r圆弧半径；startAngle圆开始角度；endAngle圆结束角度(需要转换为弧度) ；Math.PI = 180度   radian = angle * Math.PI /180；
+</code></pre><p>##绘制文本</p>
+<pre><code>ctx.strokeText(文本，x,y);  文本字符串的左下角在x,y坐标处；文本内容空心
+ctx.fillText(文本，x,y);   实心文本内容
+ctx.font = &apos;30px 黑体&apos;;   设置字体样式  大小、字体
+ctx.textAlign水平对齐 取值left center right ； start end 默认为start  
+ctx.textBaseline基线对齐 取值 top  middle bottom alphabetic(基线对齐)
+ctx.measureText(文本).width；获取当前文本的宽度
+</code></pre><p>##图片绘制</p>
+<pre><code>1.创建图片对象  var  img = new Image(); 
+2.img.src = &apos;...&apos;
+3.1 ctx.drawImage(img,x,y);  将图片绘制到x,y的位置
+3.2 ctx.drawImage(img,x,y,width,height); 将图片绘制到矩形区域，
+进行计算，等比缩放，
+3.3 ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h); 将图片的某个部分
+绘制到canvas中，一般截取的部分宽高与绘制的宽高一致
+drawImage不仅可以绘制图片，也可以绘制其他其它标签，例video、canvas等
+</code></pre><p>##变换</p>
+<pre><code>变换操作的是坐标轴，当坐标轴发生了变化以后，坐标轴内的图形也会跟着变化
+ctx.translate()  平移变换
+ctx.rotate()  旋转变换
+ctx.scale()   伸缩变换
+</code></pre><p>##canvas状态</p>
+<pre><code>canvas中，凡是设置属性，都会延续到下一次修改。
+ctx.save()  将当前状态保存   代码开始使用
+ctx.restore()  将保存的状态恢复   代码结束使用
+save 和 restore搭配使用，可以使上一次操作不影响下一次的
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-git将本地文件push到远端仓库" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/git将本地文件push到远端仓库/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/git将本地文件push到远端仓库/">
+        git将本地文件push到远端仓库
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库<br>    git init</p>
+<p>#把文件添加到版本库中，使用命令 git add .添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件<br>    git add .<br>    如出问题:git warning: LF will be replaced by CRLF in 解决办法<br>    git config core.autocrlf false</p>
+<p>#用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明<br>    git commit -m ‘first commit’</p>
+<p>#关联到远程库<br>    git remote add origin 你的远程库地址</p>
+<p>#获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）<br>    git pull –rebase origin master</p>
+<p>#把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。执行此命令后会要求输入用户名、密码，验证通过后即开始上传。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/gulp/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/gulp/">
+        gulp
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##使用npm安装指定版本的angular<br>    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号</p>
+<p>##在gulpfile.js文件中配置gulp<br>    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建<br>    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]<br>    例：gulp script  就可以执行名称为script的任务</p>
+<p>###1.引入gulp模块<br>    var gulp = require(‘gulp’);</p>
+<p>###2.引入其他gulp插件<br>    1.//引入js压缩插件gulp-uglify<br>      var uglify = require(‘gulp-uglify’);<br>    2.//引入css压缩插件gulp-cssnano<br>      var cssnano = require(‘gulp-cssnano’);<br>    3.//引入html压缩插件<br>      var htmlmin = require(‘gulp-htmlmin’);<br>    4.//引入合并插件gulp-concat<br>      var concat = require(‘gulp-concat’);<br>    5.//引入文件重命名文件gulp-rename<br>      var rename = require(‘gulp-rename’);<br>    6.//引入js代码错误提醒插件<br>      var jshint = require(‘gulp-jshint’);<br>    7.//引入文件重命名插件<br>      var imagemin = require(‘gulp-imagemin’);<br>    8.//引入更改提醒插件<br>      var notify = require(‘gulp-notify’);<br>    9.//引入浏览器自动刷新插件<br>      var browserSync = require(‘browser-sync’).create();<br>      var reload = browserSync.reload;<br>    其它插件：用法见<a href="https://www.npmjs.com/search?q=gulp" target="_blank" rel="external">https://www.npmjs.com/search?q=gulp</a><br>      sass的编译（gulp-sass）<br>      less编译 （gulp-less）<br>      自动添加css前缀（gulp-autoprefixer）<br>      压缩图片（gulp-imagemin）<br>      自动刷新页面（gulp-livereload，谷歌浏览器亲测，谷歌浏览器需安装livereload插件）<br>      图片缓存，只有图片替换了才压缩（gulp-cache）</p>
+<p>###创建任务<br>    1.html压缩   htmlmin使用<br>    gulp.task(‘html’,function(){  //task方法是创建任务的实现方式<br>       gulp.src(‘./index.html’)<br>       //src方法获取文件，此处获取同文件夹下的index，html文件<br>       .pipe(htmlmin({collapseWhitespace:true})) //去除html中的空白符<br>       .pipe(gulp.dest(‘./dist’))<br>       //dest方法，指定压缩后的文件存放路径，次例：如果没有dist文件夹会自动创建<br>       .pipe(notify(‘hello html’));//任务完成后提醒插件使用<br>    });<br>    2.rename实例   更改html的名称<br>    gulp.task(‘rename’,function(){<br>        gulp.src(‘./index.html’)  //获取文件<br>          .pipe(rename({<br>            direname:”./“,     //所在目录<br>            basename:”aloha”,  //<br>            prefix:”bonjour-“, //<br>            suffix:”-hola”,   //<br>            extname:”.html”   //  后缀名<br>            }))    //效果生成bonjour-aloha-hola.html文件名<br>          .pipe(gulp.dest(‘./‘));  //更改后文件存放在本目录<br>    });<br>    3.css压缩<br>    gulp.task(‘styles’,function(){<br>        gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>           .pipe(cssnano()) //  压缩css代码<br>           .pipe(gulp.dest(‘./dist/css’)) //  压缩后保存目录<br>           .pipe(browserSync.stream()) //   css改变后，浏览器能收到修改信息<br>           .pipe(notify(‘css complete’))  //  任务完成提醒<br>    });<br>    4.js语法检测、代码合并、压缩<br>    gulp.task(‘scripts’, function() {<br>        //合并操作的方法，此处不执行<br>        //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>        //.pipe(concat(‘all.js’))  //合并后名称<br>        gulp.src(‘js/</em>.js’)<br>            .pipe(jshint()) // 进行检查<br>            .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>            .pipe(uglify())   //js代码压缩<br>            .pipe(gulp.dest(‘./dist/js’))<br>            .pipe(browserSync.stream());  //js代码更新，浏览器能收到修改信息<br>    });<br>    5.图片:压缩<br>    gulp.task(‘images’, function() {<br>        gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>          .pipe(imagemin())<br>          .pipe(gulp.dest(‘dist/images’))<br>    });<br>    6.主任务<br>    // 主任务<br>    gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’, ‘images’], function() {<br>        //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>        //的任务，然后再执行下面的代码(称之为任务依赖)<br>         browserSync.init({   //初始化浏览器自动更新操作<br>            server: “./dist”   //要管理的文件属于哪个文件夹<br>         });<br>         //当指定的文件发送改变时执行指定任务<br>        gulp.watch(‘./index.html’, [‘html’]);<br>        gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>        gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        //当任意html文件发送变化刷新浏览器<br>        gulp.watch(“./*.html”).on(‘change’, browserSync.reload);<br>    });</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-gulp使用配置信息" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/gulp使用配置信息/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/gulp使用配置信息/">
+        gulp配置信息
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###配置gulp</p>
+<p>####先安装好各个依赖的插件<br>    1.首先安装node环境，安装gulp插件使用npm进行<br>    2.进入工作目录，在此处打开命令行<br>    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件<br>    4.通过npm安装各个gulp的插件<br>    npm install gulp –save-dev //基础库<br>    npm install gulp-htmlmin –save-dev  //html压缩<br>    npm install gulp-csso –save-dev  //css压缩<br>    npm install jshint gulp-jshint –save-dev  //js检查<br>    npm install gulp-uglify –save-dev  //js压缩<br>    npm install gulp-concat –save-dev  //文件合并<br>    npm install gulp-clean –save-dev  //清空文件夹<br>    npm install gulp-imagemin –save-dev  //图片压缩<br>    npm install gulp-rename –save-dev  //文件重命名<br>    npm install gulp-rev –save-dev  //更改版本名<br>    npm install gulp-rev-collector –save-dev<br>    //gulp-rev的插件，用于HTML模板更改引用路径</p>
+<p>####在当前文件夹的根目录下建立gulpfile.js文件，进行配置<br>    1.首先将各个依赖的插件引入<br>    var gulp = require(‘gulp’),  //基础库<br>        htmlmin = require(‘gulp-htmlmin’),//html压缩<br>        csso = require(‘gulp-csso’), //css压缩<br>        jshint = require(‘gulp-jshint’), //js检查<br>        uglify = require(‘gulp-uglify’), //js压缩<br>        concat = require(‘gulp-concat’), //文件合并<br>        clean = require(‘gulp-clean’), //清空文件夹<br>        imagemin = require(‘gulp-imagemin’), //图片压缩<br>        rename = require(‘gulp-rename’), //文件重命名<br>        rev = require(‘gulp-rev’), //更改版本名<br>        revCollector = require(‘gulp-rev-collector’); //gulp-rev的插件，用于HTML模板更改引用路径<br>    2.开始配置任务<br>    // 1.html压缩   htmlmin使用<br>        gulp.task(‘html’, function () {  //task方法是创建任务的实现方式<br>            var options = {<br>                collapseWhitespace:true,<br>                collapseBooleanAttributes:true,<br>                removeComments:true,<br>                removeEmptyAttributes:true,<br>                removeScriptTypeAttributes:true,<br>                removeStyleLinkTypeAttributes:true,<br>                minifyJS:true,<br>                minifyCSS:true<br>            };<br>            return gulp.src(‘index.html’)<br>            //src方法获取文件，此处获取同文件夹下的index，html文件<br>                .pipe(htmlmin(options)) //去除html中的空白符<br>                .pipe(gulp.dest(‘dist/‘));<br>                //dest方法，指定压缩后的文件存放路径，此时：如果没有dist文件夹会自动创建<br>        });<br>        //2.css压缩<br>        gulp.task(‘styles’, function () {<br>            return gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>                .pipe(csso()) //  压缩css代码<br>                // 此处不要修改文件名称，不然下面rev任务自动替换引用文件时会找不到要替换的内容<br>                // .pipe(rename(function (path) {<br>                //     path.basename += ‘.min’;<br>                //     path.extname = ‘.css’<br>                // }))<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/css’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/css’));<br>        });<br>        // 3.js语法检测、代码合并、压缩<br>        gulp.task(‘scripts’, function () {<br>            //合并操作的方法，此处不执行<br>            //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>            //.pipe(concat(‘all.js’))  //合并后名称<br>            return gulp.src(‘./js/</em>.js’)<br>                .pipe(jshint()) // 进行检查<br>                .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>                .pipe(uglify())   //js代码压缩<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/js’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/js’));<br>        });<br>        // 4.图片:压缩<br>        gulp.task(‘images’, function() {<br>            gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>                .pipe(imagemin())<br>                .pipe(gulp.dest(‘dist/images’))<br>        });<br>        //5. rev使用，自动改变HTML文件中的引用路径<br>        gulp.task(‘rev’,function () {<br>            return gulp.src([‘./rev/<em>*/</em>.json’,’./dist/index.html’])<br>                .pipe(revCollector({<br>                    replaceReved:true<br>                }))<br>                .pipe(rename(function (path) {<br>                    path.basename += ‘.min’;<br>                    path.extname = ‘.html’<br>                }))<br>                .pipe(gulp.dest(‘./dist’));<br>        });<br>        // 主任务，只需在命令行执行此任务就能实现压缩代码，rev任务除外<br>        gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’,’images’, ‘rev’], function () {<br>            //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>            //的任务，然后再执行下面的代码(称之为任务依赖)<br>            //当指定的文件发送改变时执行指定任务<br>            gulp.watch(‘./index.html’, [‘html’]);<br>            gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>            gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        });</p>
+<p>###注意：在执行完default主任务后没有实现HTML中路径自动改变，需要单独执行rev任务才能为HTML引入的文件自动加上版本号</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-seajs" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/seajs/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/seajs/">
+        seajs
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##什么是模块化<br>    模块化是一种将系统分离成独立功能的方法 ，可将系统分割成独立的功能部分，<br>    严格定义模块接口、模块之间具有透明性。</p>
+<p>###模块化的优点<br>    1.代码组织起来更加清晰，提升开发效率<br>    2.减少了意外的bug，便于后期维护<br>    3.避免污染全局作用域，减少了命名冲突</p>
+<p>###如何实现模块化<br>    1.将变量写在函数里面<br>    2.将变量使用对象进行管理<br>    3.使用闭包</p>
+<p>###模块化规范<br>    1.浏览器端规范<br>    amd：(<a href="https://github.com/amdjs/amdjs-api/wiki/AMD" target="_blank" rel="external">https://github.com/amdjs/amdjs-api/wiki/AMD</a>) 代表：require.js<br>    cmd: (<a href="https://github.com/cmdjs/specification/blob/master/draft/module.md" target="_blank" rel="external">https://github.com/cmdjs/specification/blob/master/draft/module.md</a>) 代表：sea.js<br>    2.服务器端规范<br>    commonjs:(<a href="http://wiki.commonjs.org/wiki/CommonJS" target="_blank" rel="external">http://wiki.commonjs.org/wiki/CommonJS</a>) 代表：node.js<br>    ECMAScript2015(ES6)模块化规范</p>
+<p>##seajs使用</p>
+<p>###cmd规范特性<br>    1.一个模块就是一个单独的文件<br>    2.每个模块都是属于define关键字的回调函数被调用，每个模块都是一个单独的作用域<br>    3.预加载、懒执行(预加载就是要先把所有的模块加载完成，懒执行就是需要执行那个模块才会执行那个模块)</p>
+<p>###如何加载模块<br>    1.在html文件中引入sea.js库(假设html同级的js文件夹中存放在js文件)<br>    2.在页面script中使用seajs.use加载主模块，起名一般叫main.js<br>    <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//方案一通过主模块控制所有的子模块</span></div><div class="line">seajs.use(<span class="string">'./js/main'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        ....</div><div class="line">    &#125;)</div><div class="line"><span class="comment">//方案二 直接将所有模块放在一个数组中</span></div><div class="line">seajs.use([<span class="string">'模块一'</span>,<span class="string">'模块二'</span>],<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>###如何定义模块<br>    define(function(){</p>
+<pre><code>})
+</code></pre><p>###如何加载别的模块</p>
+<p>###如何将当前模块暴露给别的模块</p>
+<p>###将非CMD模块转换成CMD模块</p>
+<p>###如何配置模块</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-面向对象笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/面向对象笔记/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/面向对象笔记/">
+        面向对象笔记
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##面向对象性能优化</p>
+<pre><code> 1.有关for循环：
+ 当循环取值时，每次都要重新获取数组长度，会降低代码，尤其是操作HTMLCollections，需要实时查询DOM ，而DOM操作一般是比较昂贵的
+ ，因此，我们在循环取值时可以缓存数组或集合的长度，这样只需查询一次，可以提高代码运行效率；
+ 例：for (var i = 0, max = myarray.length; i &lt; max; i++) { 
+     // 使用myarray[i]做点什么}
+
+ 2.能力检测：
+ 在框架加载时判断浏览器是否支持某些功能，保存在变量中，以后使用时判断变量即可，减少原型链的搜索，可以提高性能。
+ 判断浏览器是否支持某些方法可以进行方法能力检测或方法定义检测。
+  方法定义检测：浏览器的内置方法都有类似的结构；{ [native 可以用正则表达式: /\{\s*\[native/ 判断
+ 例：function querySelectorAll() { [native code] }
+ /\{\s*\[native/.test(document.querySelectorAll);   true支持/false不支持
+
+ 3.检测是否含有该类名：  cName是要匹配的类名
+ 将元素和匹配的类名的类名前后都加上一个空格，这样元素中的每一个类名前后都是以空格分开的，如果元素含有要匹配的类名，通过indexOf方法可返回
+ 一个大于-1的索引，如果没有，就返回-1；
+ 例：var eles = document.getElementsByTagName(&apos;*&apos;),i;
+ for(i = 0; i &lt; eles.length; i++){
+     if((&apos; &apos; + eles[i].className + &apos; &apos;).indexOf(&apos; &apos; + cName + &apos; &apos;) &gt;-1){
+         alert(&apos;匹配成功&apos;);
+     }else{
+         alert(&apos;匹配失败&apos;);
+     }
+ }
+
+ 4.Object.prototype 的成员
+ 1) constructor
+ 2) hasOwnProperty 判断该属性是否为自己提供
+ 3) propertyIsEnumerable 判断属性是否可以枚举
+ 4) isPrototypeOf    判断是否为原型对象
+ 5) toString, toLocaleString, valueOf
+
+ 5.documentfragment对象表示内存节点,在页面上不占位置
+ 创建节点通过  var dfg = document.createDocumentFragment();
+
+ 6.添加事件监听
+ 标准API   dom.addEventListener(&apos;click&apos;,function(e){...});
+ IE低版本  dom.attachEvent(&apos;onclick&apos;,function(e){...});   该事件执行顺序是倒着的，先添加的会后执行
+
+ 7.获取原生的所有事件的方法
+ var dv = document.createElement(&apos;div&apos;),results = [];
+ for(var k in dv){if(k.slice(0,2) == &apos;on&apos;){results.push(k)}}
+ 所有的事件名称都保存在results中了。
+
+ 8.实现快速继承的方法
+var o = {};
+var obj = Object.create(o);  以o为原型创建出来的对象赋值给obj
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/hello-world/" class="article-date">
+  	<time datetime="2017-08-08T10:22:12.904Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/hello-world/">
+        Hello World
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2017 Lee
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

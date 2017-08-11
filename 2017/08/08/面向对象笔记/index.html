@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>面向对象笔记 | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="##面向对象性能优化  1.有关for循环：  当循环取值时，每次都要重新获取数组长度，会降低代码，尤其是操作HTMLCollections，需要实时查询DOM ，而DOM操作一般是比较昂贵的  ，因此，我们在循环取值时可以缓存数组或集合的长度，这样只需查询一次，可以提高代码运行效率；  例：for (var i = 0, max = myarray.length; i &amp;lt; max; i++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/08/08/hello-world/index.html">
+<meta property="og:title" content="面向对象笔记">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/面向对象笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-08-08T10:22:12.904Z">
+<meta property="og:description" content="##面向对象性能优化  1.有关for循环：  当循环取值时，每次都要重新获取数组长度，会降低代码，尤其是操作HTMLCollections，需要实时查询DOM ，而DOM操作一般是比较昂贵的  ，因此，我们在循环取值时可以缓存数组或集合的长度，这样只需查询一次，可以提高代码运行效率；  例：for (var i = 0, max = myarray.length; i &amp;lt; max; i++">
+<meta property="og:updated_time" content="2017-08-11T10:10:55.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="面向对象笔记">
+<meta name="twitter:description" content="##面向对象性能优化  1.有关for循环：  当循环取值时，每次都要重新获取数组长度，会降低代码，尤其是操作HTMLCollections，需要实时查询DOM ，而DOM操作一般是比较昂贵的  ，因此，我们在循环取值时可以缓存数组或集合的长度，这样只需查询一次，可以提高代码运行效率；  例：for (var i = 0, max = myarray.length; i &amp;lt; max; i++">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -164,11 +164,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-面向对象笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/hello-world/" class="article-date">
-  	<time datetime="2017-08-08T10:22:12.904Z" itemprop="datePublished">2017-08-08</time>
+      <a href="/2017/08/08/面向对象笔记/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
   
@@ -181,7 +181,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      面向对象笔记
       
     </h1>
   
@@ -199,16 +199,55 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>##面向对象性能优化</p>
+<pre><code> 1.有关for循环：
+ 当循环取值时，每次都要重新获取数组长度，会降低代码，尤其是操作HTMLCollections，需要实时查询DOM ，而DOM操作一般是比较昂贵的
+ ，因此，我们在循环取值时可以缓存数组或集合的长度，这样只需查询一次，可以提高代码运行效率；
+ 例：for (var i = 0, max = myarray.length; i &lt; max; i++) { 
+     // 使用myarray[i]做点什么}
 
+ 2.能力检测：
+ 在框架加载时判断浏览器是否支持某些功能，保存在变量中，以后使用时判断变量即可，减少原型链的搜索，可以提高性能。
+ 判断浏览器是否支持某些方法可以进行方法能力检测或方法定义检测。
+  方法定义检测：浏览器的内置方法都有类似的结构；{ [native 可以用正则表达式: /\{\s*\[native/ 判断
+ 例：function querySelectorAll() { [native code] }
+ /\{\s*\[native/.test(document.querySelectorAll);   true支持/false不支持
+
+ 3.检测是否含有该类名：  cName是要匹配的类名
+ 将元素和匹配的类名的类名前后都加上一个空格，这样元素中的每一个类名前后都是以空格分开的，如果元素含有要匹配的类名，通过indexOf方法可返回
+ 一个大于-1的索引，如果没有，就返回-1；
+ 例：var eles = document.getElementsByTagName(&apos;*&apos;),i;
+ for(i = 0; i &lt; eles.length; i++){
+     if((&apos; &apos; + eles[i].className + &apos; &apos;).indexOf(&apos; &apos; + cName + &apos; &apos;) &gt;-1){
+         alert(&apos;匹配成功&apos;);
+     }else{
+         alert(&apos;匹配失败&apos;);
+     }
+ }
+
+ 4.Object.prototype 的成员
+ 1) constructor
+ 2) hasOwnProperty 判断该属性是否为自己提供
+ 3) propertyIsEnumerable 判断属性是否可以枚举
+ 4) isPrototypeOf    判断是否为原型对象
+ 5) toString, toLocaleString, valueOf
+
+ 5.documentfragment对象表示内存节点,在页面上不占位置
+ 创建节点通过  var dfg = document.createDocumentFragment();
+
+ 6.添加事件监听
+ 标准API   dom.addEventListener(&apos;click&apos;,function(e){...});
+ IE低版本  dom.attachEvent(&apos;onclick&apos;,function(e){...});   该事件执行顺序是倒着的，先添加的会后执行
+
+ 7.获取原生的所有事件的方法
+ var dv = document.createElement(&apos;div&apos;),results = [];
+ for(var k in dv){if(k.slice(0,2) == &apos;on&apos;){results.push(k)}}
+ 所有的事件名称都保存在results中了。
+
+ 8.实现快速继承的方法
+var o = {};
+var obj = Object.create(o);  以o为原型创建出来的对象赋值给obj
+</code></pre>
       
     </div>
     
@@ -217,15 +256,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/08/面向对象笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/08/08/seajs/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">&lt;</strong>
       <div class="article-nav-title">
         
-          面向对象笔记
+          seajs
         
       </div>
     </a>
   
+  
+    <a href="/2017/08/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
   
 </nav>
 
@@ -233,7 +277,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="hello-world" data-title="Hello World" data-url="http://yoursite.com/2017/08/08/hello-world/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="Hello World">
+<div class="ds-share share" data-thread-key="面向对象笔记" data-title="面向对象笔记" data-url="http://yoursite.com/2017/08/08/面向对象笔记/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="面向对象笔记">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>

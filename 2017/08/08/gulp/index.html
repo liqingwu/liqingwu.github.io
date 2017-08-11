@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>gulp | Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##使用npm安装指定版本的angular    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号 ##在gulpfile.js文件中配置gulp    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]    例">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/gulp/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##使用npm安装指定版本的angular    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号 ##在gulpfile.js文件中配置gulp    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]    例">
+<meta property="og:updated_time" content="2017-08-11T10:12:41.285Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gulp">
+<meta name="twitter:description" content="##使用npm安装指定版本的angular    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号 ##在gulpfile.js文件中配置gulp    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]    例">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lee</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lee</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lee</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/gulp/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gulp
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##使用npm安装指定版本的angular<br>    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号</p>
+<p>##在gulpfile.js文件中配置gulp<br>    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建<br>    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]<br>    例：gulp script  就可以执行名称为script的任务</p>
+<p>###1.引入gulp模块<br>    var gulp = require(‘gulp’);</p>
+<p>###2.引入其他gulp插件<br>    1.//引入js压缩插件gulp-uglify<br>      var uglify = require(‘gulp-uglify’);<br>    2.//引入css压缩插件gulp-cssnano<br>      var cssnano = require(‘gulp-cssnano’);<br>    3.//引入html压缩插件<br>      var htmlmin = require(‘gulp-htmlmin’);<br>    4.//引入合并插件gulp-concat<br>      var concat = require(‘gulp-concat’);<br>    5.//引入文件重命名文件gulp-rename<br>      var rename = require(‘gulp-rename’);<br>    6.//引入js代码错误提醒插件<br>      var jshint = require(‘gulp-jshint’);<br>    7.//引入文件重命名插件<br>      var imagemin = require(‘gulp-imagemin’);<br>    8.//引入更改提醒插件<br>      var notify = require(‘gulp-notify’);<br>    9.//引入浏览器自动刷新插件<br>      var browserSync = require(‘browser-sync’).create();<br>      var reload = browserSync.reload;<br>    其它插件：用法见<a href="https://www.npmjs.com/search?q=gulp" target="_blank" rel="external">https://www.npmjs.com/search?q=gulp</a><br>      sass的编译（gulp-sass）<br>      less编译 （gulp-less）<br>      自动添加css前缀（gulp-autoprefixer）<br>      压缩图片（gulp-imagemin）<br>      自动刷新页面（gulp-livereload，谷歌浏览器亲测，谷歌浏览器需安装livereload插件）<br>      图片缓存，只有图片替换了才压缩（gulp-cache）</p>
+<p>###创建任务<br>    1.html压缩   htmlmin使用<br>    gulp.task(‘html’,function(){  //task方法是创建任务的实现方式<br>       gulp.src(‘./index.html’)<br>       //src方法获取文件，此处获取同文件夹下的index，html文件<br>       .pipe(htmlmin({collapseWhitespace:true})) //去除html中的空白符<br>       .pipe(gulp.dest(‘./dist’))<br>       //dest方法，指定压缩后的文件存放路径，次例：如果没有dist文件夹会自动创建<br>       .pipe(notify(‘hello html’));//任务完成后提醒插件使用<br>    });<br>    2.rename实例   更改html的名称<br>    gulp.task(‘rename’,function(){<br>        gulp.src(‘./index.html’)  //获取文件<br>          .pipe(rename({<br>            direname:”./“,     //所在目录<br>            basename:”aloha”,  //<br>            prefix:”bonjour-“, //<br>            suffix:”-hola”,   //<br>            extname:”.html”   //  后缀名<br>            }))    //效果生成bonjour-aloha-hola.html文件名<br>          .pipe(gulp.dest(‘./‘));  //更改后文件存放在本目录<br>    });<br>    3.css压缩<br>    gulp.task(‘styles’,function(){<br>        gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>           .pipe(cssnano()) //  压缩css代码<br>           .pipe(gulp.dest(‘./dist/css’)) //  压缩后保存目录<br>           .pipe(browserSync.stream()) //   css改变后，浏览器能收到修改信息<br>           .pipe(notify(‘css complete’))  //  任务完成提醒<br>    });<br>    4.js语法检测、代码合并、压缩<br>    gulp.task(‘scripts’, function() {<br>        //合并操作的方法，此处不执行<br>        //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>        //.pipe(concat(‘all.js’))  //合并后名称<br>        gulp.src(‘js/</em>.js’)<br>            .pipe(jshint()) // 进行检查<br>            .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>            .pipe(uglify())   //js代码压缩<br>            .pipe(gulp.dest(‘./dist/js’))<br>            .pipe(browserSync.stream());  //js代码更新，浏览器能收到修改信息<br>    });<br>    5.图片:压缩<br>    gulp.task(‘images’, function() {<br>        gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>          .pipe(imagemin())<br>          .pipe(gulp.dest(‘dist/images’))<br>    });<br>    6.主任务<br>    // 主任务<br>    gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’, ‘images’], function() {<br>        //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>        //的任务，然后再执行下面的代码(称之为任务依赖)<br>         browserSync.init({   //初始化浏览器自动更新操作<br>            server: “./dist”   //要管理的文件属于哪个文件夹<br>         });<br>         //当指定的文件发送改变时执行指定任务<br>        gulp.watch(‘./index.html’, [‘html’]);<br>        gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>        gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        //当任意html文件发送变化刷新浏览器<br>        gulp.watch(“./*.html”).on(‘change’, browserSync.reload);<br>    });</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/08/git将本地文件push到远端仓库/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          git将本地文件push到远端仓库
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/08/gulp使用配置信息/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">gulp配置信息</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="gulp" data-title="gulp" data-url="http://yoursite.com/2017/08/08/gulp/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="gulp">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2017 Lee
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>

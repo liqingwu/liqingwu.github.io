@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>笔记 | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#事件模块 ##js事件 1.select中onchange事件，当select中的option改变时触发 2.onload事件，任何dom元素都有加载事件，当加载完成以后才执行 3.如何从委托事件的父元素身上找到事件触发的元素，通过事件对象的target和srcElement属性就可以得到事件源 ##jQuery事件 1.change   select中的option选项改变时触发 #方法 ##">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/笔记/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#事件模块 ##js事件 1.select中onchange事件，当select中的option改变时触发 2.onload事件，任何dom元素都有加载事件，当加载完成以后才执行 3.如何从委托事件的父元素身上找到事件触发的元素，通过事件对象的target和srcElement属性就可以得到事件源 ##jQuery事件 1.change   select中的option选项改变时触发 #方法 ##">
+<meta property="og:updated_time" content="2017-08-11T10:10:16.378Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="笔记">
+<meta name="twitter:description" content="#事件模块 ##js事件 1.select中onchange事件，当select中的option改变时触发 2.onload事件，任何dom元素都有加载事件，当加载完成以后才执行 3.如何从委托事件的父元素身上找到事件触发的元素，通过事件对象的target和srcElement属性就可以得到事件源 ##jQuery事件 1.change   select中的option选项改变时触发 #方法 ##">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,64 +164,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-文件上传限制格式和大小" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/文件上传限制格式和大小/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/文件上传限制格式和大小/">
-        文件上传时限制格式和大小
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###文件上传时限制格式和大小<br>    function readURL(input, file) {<br>    var img = null;<br>    chksize();<br>    function chksize() {<br>        $(input).addClass(‘upLoad’);  //是否有图片的标识<br>        if (input.files &amp;&amp; input.files[0]) {<br>            if(input.files[0].size &gt; 5242880){<br>                globalFunc.layerAlert(‘请上传小于5M的图片!’);<br>                $(input).removeClass(‘upLoad’);<br>                $(‘.’ + file).attr(‘src’, ‘’).hide().siblings(‘p’).html(‘请上传身份证照片’).css(‘color’, ‘#4A4A4A’)<br>                    .siblings(‘.bg’).css(‘background’, ‘#fff’)<br>                    .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/addIdentify.png”) no-repeat 0 0’);<br>                return false;<br>            }<br>            var reader = new FileReader();<br>            reader.onload = function (e) {<br>                if (img) img.removeNode(true);<br>                img = document.createElement(“img”);<br>                img.style.position = “absolute”;<br>                img.style.visibility = “hidden”;<br>                img.width = 0;<br>                img.height = 0;<br>                $(‘body’).append(img);<br>                img.src = e.target.result;<br>                $(img).on(‘error’,function () {<br>                    $(‘.’ + file).attr(‘src’, ‘’).hide().siblings(‘p’).html(‘请上传身份证照片’).css(‘color’, ‘#4A4A4A’)<br>                        .siblings(‘.bg’).css(‘background’, ‘#fff’)<br>                        .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/addIdentify.png”) no-repeat 0 0’);<br>                    $(input).removeClass(‘upLoad’);<br>                    globalFunc.layerAlert(‘您选择的文件不是图片格式!’);<br>                });<br>                    $(‘.’ + file).attr(‘src’, e.target.result).show()<br>                        .siblings(‘p’).html(‘重新上传’).css(‘color’, ‘#fff’)<br>                        .siblings(‘.bg’).css(‘background’, ‘rgba(0,0,0,0.1)’)<br>                        .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/cursorIdentify.png”) no-repeat 0 0’);<br>            };<br>            reader.readAsDataURL(input.files[0]);<br>        }<br>    }<br>    return false;<br>    }</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/08/08/笔记/" class="article-date">
@@ -233,15 +180,21 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/笔记/">
-        笔记
-        
-      </a>
+    <h1 class="article-title" itemprop="name">
+      笔记
+      
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -380,484 +333,51 @@ data: $(&apos;#f1&apos;).serialize(),
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/08/文件上传限制格式和大小/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          文件上传时限制格式和大小
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/08/react/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">react</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-  
-    <article id="post-react" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/react/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
+<div class="ds-share share" data-thread-key="笔记" data-title="笔记" data-url="http://yoursite.com/2017/08/08/笔记/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="笔记">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/react/">
-        react
-        
-      </a>
-    </h1>
-  
+ </div>
+ 
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###react更新组件小技巧<br>    react中任何数据改变都会引起组件重新加载,如想初始化RangePicker,只需要添加一个随机数即可,需要改变组件时更新这个随机数即可</p>
-<p>###获取url后的参数<br>    const id = location.query.id;</p>
-<p>###设置url后参数query方法<br>     yield put(routerRedux.push({<br>          pathname: ‘/iouAssetDetail’,<br>          query: {<br>            id: payload.iouUserId,<br>          }<br>        })</p>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
 
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-  
-    <article id="post-ieBug" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/ieBug/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/ieBug/">
-        ieBug
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###IE中不支持placeholder属性<br>    通过js控制,检测是否支持,不支持则扩增方法实现,通过失去焦点的获取焦点实现.</p>
-<p>###IE ajax会有缓存<br>    如果ajax没有参数,需加上随机参数,不然不会重新访问接口</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-css-hack" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/css-hack/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/css-hack/">
-        css-hack
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###左侧浮动,右侧自适应<br>    在Firefox中,不支持不给外层盒子设宽度的方法,需要给整体盒子设宽度.</p>
-<p>###能使字体变细的css<br>    -webkit-font-smoothing: antialiased;    加在body中</p>
-<p>###在点击FireFox a标签的时候会出现虚线框<br>    解决方法:a:focus{<br>        outline:none;<br>    }</p>
-<p>###ie bug<br>    input 输入框会有叉号<br>    input::-ms-clear, input::-ms-reveal{<br>    display: none;<br>    }</p>
-<p>###正常开发的pc网站如何在移动端能不错乱显示<br>    body   min-width: 1180px;  //版心宽度</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-360浏览器" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/360浏览器/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/360浏览器/">
-        360浏览器
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###如何强制360浏览器默认使用极速模式访问自己的网站？<br>    <meta http-equiv="X-UA-Compatible" content="IE=edge"><br>    <meta name="renderer" content="webkit"></p>
-<p>###如何解决360浏览器输入框光标过大,而IE中输入框光标有问题<br>    input只设高度,不设行高,IE加私有行高</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-chrome浏览器" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/chrome浏览器/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/chrome浏览器/">
-        chrome浏览器
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###谷歌浏览器下面的三角警告<br>    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><br>    可以在相应的页面的<head>里加上这句代码，意思是自动将http的不安全请求升级为https</head></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-ajax" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/ajax/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/ajax/">
-        ajax
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###ajax错误统一处理<br>    $(document).ajaxError(function (event, xhr, options, exc) {<br>        if (!/^\/account\/myAsset/.test(options.url)) {<br>            window.location.reload();<br>        }<br>        // if(xhr.status == 200){<br>        // }<br>    });</p>
-<p>###ajax请求结束配置<br>     $(document).ajaxComplete( function(event, jqXHR, options){<br>        // ajax请求结束统一处理函数<br>        var redirectUrl = jqXHR.getResponseHeader(“redirectUrl”);<br>        if (redirectUrl !== null &amp;&amp; !/^\/account\/myAsset/.test(options.url)) {<br>            window.location.href = redirectUrl;<br>        }<br>    } );</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-javascript" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/javascript/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/javascript/">
-        javascript
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###返回上一页并刷新<br>    <a href="javascript:" onclick="self.location=document.referrer;" target="_blank" rel="external"></a> </p>
-<p>###处理只能输入数字的方法<br>     function treadDeal($this) {<br>            var oldStr = $this.val();<br>            var newStr = oldStr.replace(/[^0-9]/g, ‘’);<br>            if (oldStr !== newStr) {<br>                $this.val(newStr);<br>            }<br>        }</p>
-<p>###修改Number的toFixed方法,不四舍五入,直接截取<br>    Number.prototype.toFixed = function (num) {<br>        var str = this.toString();<br>        if (!/./.test(str)) {<br>            // 不是小数<br>            str += ‘.’;<br>            for (var i = 0; i &lt; num; i++) {<br>                str += ‘0’;<br>            }<br>            return str;<br>        }<br>        str = str.substring(0, str.lastIndexOf(‘.’) + num + 1);<br>        var start = str.substring(str.lastIndexOf(‘.’) + 1).length;<br>        for (var j = start; j &lt; num; j++) {<br>            str += ‘0’;<br>        }<br>        return str;<br>    };</p>
-<p>###匹配金额的正则表达式<br>     $(“input”).keyup(function () {<br>        // 限制只能输入前8位<br>                var str = $(this).val();<br>                if (/\d{9}/.test(str)) {<br>                    $(this).val(str.substr(0, 8) + str.substr(9));<br>                }<br>                // 限制输入数字或点<br>                var reg = $(this).val().match(/\d+.?\d{0,2}/);<br>                var str1 = $(this).val();<br>                var txt = ‘’;<br>                if (reg != null) {<br>                    txt = reg[0];<br>                    console.log(txt);<br>                    console.log(reg);<br>                }<br>                // if (txt &amp;&amp; /^0[1-9]/.test(txt)) {<br>                //     txt = txt[1];<br>                // }<br>                if(str1 !== txt){<br>                    $(this).val(txt);<br>                }<br>    }).change(function () {<br>        var v = $(this).val();<br>                if (/.$/.test(v)) {<br>                    $(this).val(v.substr(0, v.length - 1));<br>                }<br>                 if(v){<br>                    v = +parseFloat(v + ‘’);<br>                }<br>                $(this).val(v);<br>    });</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-localStorage" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/localStorage/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/localStorage/">
-        localStorage
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###缓存处理<br>    function setStroage(key, value) {<br>        var user = JSON.parse(localStorage.getItem(‘userinfo’)) || {};<br>        user[key] = value;<br>        localStorage.setItem(‘userinfo’, JSON.stringify(user));<br>    }<br>    function getStroage(key) {<br>        var data = JSON.parse(localStorage.getItem(‘userinfo’));<br>        if (data) {<br>            return data[key];<br>        }<br>    }<br>    function deleteStroage() {<br>        localStorage.removeItem(‘userinfo’);<br>    }</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -881,8 +401,8 @@ data: $(&apos;#f1&apos;).serialize(),
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

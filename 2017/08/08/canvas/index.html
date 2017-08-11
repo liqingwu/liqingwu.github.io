@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>canvas | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="##canvas是一个画布，默认大小是300*150 如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小 ##想要在canvas上绘图，必须得到canvas绘图工具 var ctx = canvas.getContext(&amp;quot;2d&amp;quot;);   2d 平面绘图    webgl 3d绘">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/08/08/hello-world/index.html">
+<meta property="og:title" content="canvas">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/canvas/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-08-08T10:22:12.904Z">
+<meta property="og:description" content="##canvas是一个画布，默认大小是300*150 如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小 ##想要在canvas上绘图，必须得到canvas绘图工具 var ctx = canvas.getContext(&amp;quot;2d&amp;quot;);   2d 平面绘图    webgl 3d绘">
+<meta property="og:updated_time" content="2017-08-11T10:08:38.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="canvas">
+<meta name="twitter:description" content="##canvas是一个画布，默认大小是300*150 如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小 ##想要在canvas上绘图，必须得到canvas绘图工具 var ctx = canvas.getContext(&amp;quot;2d&amp;quot;);   2d 平面绘图    webgl 3d绘">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -164,11 +164,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-canvas" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/hello-world/" class="article-date">
-  	<time datetime="2017-08-08T10:22:12.904Z" itemprop="datePublished">2017-08-08</time>
+      <a href="/2017/08/08/canvas/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
   
@@ -181,7 +181,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      canvas
       
     </h1>
   
@@ -199,16 +199,63 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>##canvas是一个画布，默认大小是300*150</p>
+<pre><code>如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小
+</code></pre><p>##想要在canvas上绘图，必须得到canvas绘图工具</p>
+<pre><code>var ctx = canvas.getContext(&quot;2d&quot;);   2d 平面绘图    webgl 3d绘图
+ctx.moveTo(100,100);//将绘图工具定点到100,100位置
+ctx.lineTo(200,100);//从刚才位置绘制到哪里
+ctx.stroke();描边绘图，将绘制的图形呈递出来
+</code></pre><p>##ctx.fill()</p>
+<pre><code>调用fill方法，会将所有的点连接起来，即使没有结束的那条线，也会构成一个封闭的结构
+</code></pre><p>###ctx.closePath() </p>
+<pre><code>闭合路径方法，可以将结束点与开始点连接起来
+ctx.lineWidth = num：用来设置线条的宽度  num是宽度
+</code></pre><p>###ctx.beginPath() </p>
+<pre><code>在canvas中开启新的内容，不影响上一次绘制
+</code></pre><p>###虚线</p>
+<pre><code>ctx.setLineDash(arr)   arr中存在着实线部分和虚线部分
+</code></pre><p>###颜色</p>
+<pre><code>ctx.strokeStyle= &apos;red&apos;;  设置描边颜色
+ctx.fillStyle= &apos;red&apos;;  设置填充颜色
+</code></pre><p>##绘制矩形</p>
+<pre><code>如果不设置style，不需要设置beginPath
+ctx.rect(x,y,width,height);   虚描，需要描边  x,y起始点
+ctx.strokeRect(x,y,width,height);   直接画矩形
+ctx.fillRect(x,y,width,height);   填充矩形
+ctx.clearRect(x,y,width,height); 清除绘制的矩形区域,橡皮擦功能
+ctx.clearRect(0,0,cas.width,cas.height);清除整个画布
+cas.width = cas.width;  相当于把画布刷新，也可以清除整个画布
+</code></pre><p>##绘制圆弧</p>
+<pre><code>ctx.arc(x,y,r,startAngle,endAngle,clockWise);   需要描边呈现
+x,y圆心坐标;r圆弧半径；startAngle圆开始角度；endAngle圆结束角度(需要转换为弧度) ；Math.PI = 180度   radian = angle * Math.PI /180；
+</code></pre><p>##绘制文本</p>
+<pre><code>ctx.strokeText(文本，x,y);  文本字符串的左下角在x,y坐标处；文本内容空心
+ctx.fillText(文本，x,y);   实心文本内容
+ctx.font = &apos;30px 黑体&apos;;   设置字体样式  大小、字体
+ctx.textAlign水平对齐 取值left center right ； start end 默认为start  
+ctx.textBaseline基线对齐 取值 top  middle bottom alphabetic(基线对齐)
+ctx.measureText(文本).width；获取当前文本的宽度
+</code></pre><p>##图片绘制</p>
+<pre><code>1.创建图片对象  var  img = new Image(); 
+2.img.src = &apos;...&apos;
+3.1 ctx.drawImage(img,x,y);  将图片绘制到x,y的位置
+3.2 ctx.drawImage(img,x,y,width,height); 将图片绘制到矩形区域，
+进行计算，等比缩放，
+3.3 ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h); 将图片的某个部分
+绘制到canvas中，一般截取的部分宽高与绘制的宽高一致
+drawImage不仅可以绘制图片，也可以绘制其他其它标签，例video、canvas等
+</code></pre><p>##变换</p>
+<pre><code>变换操作的是坐标轴，当坐标轴发生了变化以后，坐标轴内的图形也会跟着变化
+ctx.translate()  平移变换
+ctx.rotate()  旋转变换
+ctx.scale()   伸缩变换
+</code></pre><p>##canvas状态</p>
+<pre><code>canvas中，凡是设置属性，都会延续到下一次修改。
+ctx.save()  将当前状态保存   代码开始使用
+ctx.restore()  将保存的状态恢复   代码结束使用
+save 和 restore搭配使用，可以使上一次操作不影响下一次的
+</code></pre>
       
     </div>
     
@@ -217,15 +264,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/08/面向对象笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/08/08/angular/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">&lt;</strong>
       <div class="article-nav-title">
         
-          面向对象笔记
+          angular
         
       </div>
     </a>
   
+  
+    <a href="/2017/08/08/git将本地文件push到远端仓库/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git将本地文件push到远端仓库</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
   
 </nav>
 
@@ -233,7 +285,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="hello-world" data-title="Hello World" data-url="http://yoursite.com/2017/08/08/hello-world/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="Hello World">
+<div class="ds-share share" data-thread-key="canvas" data-title="canvas" data-url="http://yoursite.com/2017/08/08/canvas/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="canvas">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
