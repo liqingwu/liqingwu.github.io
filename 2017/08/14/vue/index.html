@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>文件上传时限制格式和大小 | Hexo</title>
+  <title>vue | Hexo</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###文件上传时限制格式和大小    function readURL(input, file) {    var img = null;    chksize();    function chksize() {        $(input).addClass(‘upLoad’);  //是否有图片的标识        if (input.files &amp;amp;&amp;amp; input.file">
+  <meta name="description" content="###vue中使用iconfont    引入需要在index.html中,可以全局使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="文件上传时限制格式和大小">
-<meta property="og:url" content="http://yoursite.com/2017/08/08/文件上传限制格式和大小/index.html">
+<meta property="og:title" content="vue">
+<meta property="og:url" content="http://yoursite.com/2017/08/14/vue/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="###文件上传时限制格式和大小    function readURL(input, file) {    var img = null;    chksize();    function chksize() {        $(input).addClass(‘upLoad’);  //是否有图片的标识        if (input.files &amp;amp;&amp;amp; input.file">
-<meta property="og:updated_time" content="2017-08-11T10:15:02.067Z">
+<meta property="og:description" content="###vue中使用iconfont    引入需要在index.html中,可以全局使用">
+<meta property="og:updated_time" content="2017-08-14T10:00:06.710Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="文件上传时限制格式和大小">
-<meta name="twitter:description" content="###文件上传时限制格式和大小    function readURL(input, file) {    var img = null;    chksize();    function chksize() {        $(input).addClass(‘upLoad’);  //是否有图片的标识        if (input.files &amp;amp;&amp;amp; input.file">
+<meta name="twitter:title" content="vue">
+<meta name="twitter:description" content="###vue中使用iconfont    引入需要在index.html中,可以全局使用">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -164,11 +164,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-文件上传限制格式和大小" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-vue" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/文件上传限制格式和大小/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+      <a href="/2017/08/14/vue/" class="article-date">
+  	<time datetime="2017-08-14T09:56:40.000Z" itemprop="datePublished">2017-08-14</time>
 </a>
     </div>
   
@@ -181,7 +181,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      文件上传时限制格式和大小
+      vue
       
     </h1>
   
@@ -199,7 +199,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###文件上传时限制格式和大小<br>    function readURL(input, file) {<br>    var img = null;<br>    chksize();<br>    function chksize() {<br>        $(input).addClass(‘upLoad’);  //是否有图片的标识<br>        if (input.files &amp;&amp; input.files[0]) {<br>            if(input.files[0].size &gt; 5242880){<br>                globalFunc.layerAlert(‘请上传小于5M的图片!’);<br>                $(input).removeClass(‘upLoad’);<br>                $(‘.’ + file).attr(‘src’, ‘’).hide().siblings(‘p’).html(‘请上传身份证照片’).css(‘color’, ‘#4A4A4A’)<br>                    .siblings(‘.bg’).css(‘background’, ‘#fff’)<br>                    .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/addIdentify.png”) no-repeat 0 0’);<br>                return false;<br>            }<br>            var reader = new FileReader();<br>            reader.onload = function (e) {<br>                if (img) img.removeNode(true);<br>                img = document.createElement(“img”);<br>                img.style.position = “absolute”;<br>                img.style.visibility = “hidden”;<br>                img.width = 0;<br>                img.height = 0;<br>                $(‘body’).append(img);<br>                img.src = e.target.result;<br>                $(img).on(‘error’,function () {<br>                    $(‘.’ + file).attr(‘src’, ‘’).hide().siblings(‘p’).html(‘请上传身份证照片’).css(‘color’, ‘#4A4A4A’)<br>                        .siblings(‘.bg’).css(‘background’, ‘#fff’)<br>                        .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/addIdentify.png”) no-repeat 0 0’);<br>                    $(input).removeClass(‘upLoad’);<br>                    globalFunc.layerAlert(‘您选择的文件不是图片格式!’);<br>                });<br>                    $(‘.’ + file).attr(‘src’, e.target.result).show()<br>                        .siblings(‘p’).html(‘重新上传’).css(‘color’, ‘#fff’)<br>                        .siblings(‘.bg’).css(‘background’, ‘rgba(0,0,0,0.1)’)<br>                        .siblings(‘a’).css(‘background’, ‘url(“../../../statics/img/cursorIdentify.png”) no-repeat 0 0’);<br>            };<br>            reader.readAsDataURL(input.files[0]);<br>        }<br>    }<br>    return false;<br>    }</p>
+        <p>###vue中使用iconfont<br>    引入需要在index.html中,可以全局使用</p>
 
       
     </div>
@@ -209,18 +209,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/08/seajs/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          seajs
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/08/08/正则表达式/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">正则表达式</div>
+    <a href="/2017/08/08/360浏览器/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">360浏览器</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -230,7 +221,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="文件上传限制格式和大小" data-title="文件上传时限制格式和大小" data-url="http://yoursite.com/2017/08/08/文件上传限制格式和大小/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="文件上传时限制格式和大小">
+<div class="ds-share share" data-thread-key="vue" data-title="vue" data-url="http://yoursite.com/2017/08/14/vue/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="vue">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
