@@ -217,10 +217,10 @@
 
 
   
-    <article id="post-react" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ieBug" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/react/" class="article-date">
+      <a href="/2017/08/08/ieBug/" class="article-date">
   	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
@@ -234,8 +234,8 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/react/">
-        react
+      <a class="article-title" href="/2017/08/08/ieBug/">
+        ieBug
         
       </a>
     </h1>
@@ -246,9 +246,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###react更新组件小技巧<br>    react中任何数据改变都会引起组件重新加载,如想初始化RangePicker,只需要添加一个随机数即可,需要改变组件时更新这个随机数即可</p>
-<p>###获取url后的参数<br>    const id = location.query.id;</p>
-<p>###设置url后参数query方法<br>     yield put(routerRedux.push({<br>          pathname: ‘/iouAssetDetail’,<br>          query: {<br>            id: payload.iouUserId,<br>          }<br>        })</p>
+        <p>###IE中不支持placeholder属性<br>    通过js控制,检测是否支持,不支持则扩增方法实现,通过失去焦点的获取焦点实现.</p>
+<p>###IE ajax会有缓存<br>    如果ajax没有参数,需加上随机参数,不然不会重新访问接口</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-es6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/es6/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/es6/">
+        es6
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###constructor中super的用法<br>    调用super的原因：在ES6中，在子类的constructor中必须先调用super才能引用this<br>    super(props)的目的：在constructor中可以使用this.props</p>
+<p>###componentWillMount，componentDidMount有什么用处<br>    componentWillMount在页面被渲染之前执行，也就是在render方法之前执行，我一般在componentWillMount中触发 请求数据的方法。componentDidMount类似js中的window.onload，执行在render方法之后，也就是页面的组件渲染完毕之后</p>
+<p>###react中组件必须为大写开头<br>    您正在使用没有大写字母的React组件。React将其解释为DOM标签，因为React JSX转换使用大小写约定来区分用户定义的组件和DOM标签。</p>
+<p>###通常你会在一个组件中渲染列表。我们可以将前面的例子重构成接受一个数组的数组numbers并输出一个无序的元素列表。当您运行此代码时，您将被给予一个警告，以便为列表项提供一个密钥。“key”是创建元素列表时需要包含的特殊字符串属性,页面中key不会被渲染出来<br>    function NumberList(props) {<br>      const numbers = props.numbers;<br>      const listItems = numbers.map((number) =&gt;<br>        <li key="{number.toString()}"><br>          {number}<br>        </li><br>      );<br>      return (<br>        <ul>{listItems}</ul><br>      );<br>    }<br>    const numbers = [1, 2, 3, 4, 5];<br>    ReactDOM.render(<br>      <numberlist numbers="{numbers}">,<br>      document.getElementById(‘root’)<br>    );</numberlist></p>
 
       
     </div>
@@ -349,124 +406,6 @@
 
 
   
-    <article id="post-css-hack" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/css-hack/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/css-hack/">
-        css-hack
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###左侧浮动,右侧自适应<br>    在Firefox中,不支持不给外层盒子设宽度的方法,需要给整体盒子设宽度.</p>
-<p>###能使字体变细的css<br>    -webkit-font-smoothing: antialiased;    加在body中</p>
-<p>###在点击FireFox a标签的时候会出现虚线框<br>    解决方法:a:focus{<br>        outline:none;<br>    }</p>
-<p>###ie bug<br>    input 输入框会有叉号<br>    input::-ms-clear, input::-ms-reveal{<br>    display: none;<br>    }</p>
-<p>###正常开发的pc网站如何在移动端能不错乱显示<br>    body   min-width: 1180px;  //版心宽度</p>
-<p>###通过css设置宽高相等,但设置固定值<br>     width: 100%;<br>     height: 0;<br>     padding-top: 100%;   //高度为0,padding为100%时高度等于宽度</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-es6" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/08/08/es6/" class="article-date">
-  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/es6/">
-        es6
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###constructor中super的用法<br>    调用super的原因：在ES6中，在子类的constructor中必须先调用super才能引用this<br>    super(props)的目的：在constructor中可以使用this.props</p>
-<p>###componentWillMount，componentDidMount有什么用处<br>    componentWillMount在页面被渲染之前执行，也就是在render方法之前执行，我一般在componentWillMount中触发 请求数据的方法。componentDidMount类似js中的window.onload，执行在render方法之后，也就是页面的组件渲染完毕之后</p>
-<p>###react中组件必须为大写开头<br>    您正在使用没有大写字母的React组件。React将其解释为DOM标签，因为React JSX转换使用大小写约定来区分用户定义的组件和DOM标签。</p>
-<p>###通常你会在一个组件中渲染列表。我们可以将前面的例子重构成接受一个数组的数组numbers并输出一个无序的元素列表。当您运行此代码时，您将被给予一个警告，以便为列表项提供一个密钥。“key”是创建元素列表时需要包含的特殊字符串属性,页面中key不会被渲染出来<br>    function NumberList(props) {<br>      const numbers = props.numbers;<br>      const listItems = numbers.map((number) =&gt;<br>        <li key="{number.toString()}"><br>          {number}<br>        </li><br>      );<br>      return (<br>        <ul>{listItems}</ul><br>      );<br>    }<br>    const numbers = [1, 2, 3, 4, 5];<br>    ReactDOM.render(<br>      <numberlist numbers="{numbers}">,<br>      document.getElementById(‘root’)<br>    );</numberlist></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
     <article id="post-git将本地文件push到远端仓库" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -527,10 +466,10 @@
 
 
   
-    <article id="post-canvas" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/canvas/" class="article-date">
+      <a href="/2017/08/08/gulp/" class="article-date">
   	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
@@ -544,8 +483,8 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/canvas/">
-        canvas
+      <a class="article-title" href="/2017/08/08/gulp/">
+        gulp
         
       </a>
     </h1>
@@ -556,63 +495,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##canvas是一个画布，默认大小是300*150</p>
-<pre><code>如果想改变大小必须通过html的width，height属性增加像素改变大小，不能直接通过css设置，css设置会直接拉伸像素大小，并不能改变画布大小
-</code></pre><p>##想要在canvas上绘图，必须得到canvas绘图工具</p>
-<pre><code>var ctx = canvas.getContext(&quot;2d&quot;);   2d 平面绘图    webgl 3d绘图
-ctx.moveTo(100,100);//将绘图工具定点到100,100位置
-ctx.lineTo(200,100);//从刚才位置绘制到哪里
-ctx.stroke();描边绘图，将绘制的图形呈递出来
-</code></pre><p>##ctx.fill()</p>
-<pre><code>调用fill方法，会将所有的点连接起来，即使没有结束的那条线，也会构成一个封闭的结构
-</code></pre><p>###ctx.closePath() </p>
-<pre><code>闭合路径方法，可以将结束点与开始点连接起来
-ctx.lineWidth = num：用来设置线条的宽度  num是宽度
-</code></pre><p>###ctx.beginPath() </p>
-<pre><code>在canvas中开启新的内容，不影响上一次绘制
-</code></pre><p>###虚线</p>
-<pre><code>ctx.setLineDash(arr)   arr中存在着实线部分和虚线部分
-</code></pre><p>###颜色</p>
-<pre><code>ctx.strokeStyle= &apos;red&apos;;  设置描边颜色
-ctx.fillStyle= &apos;red&apos;;  设置填充颜色
-</code></pre><p>##绘制矩形</p>
-<pre><code>如果不设置style，不需要设置beginPath
-ctx.rect(x,y,width,height);   虚描，需要描边  x,y起始点
-ctx.strokeRect(x,y,width,height);   直接画矩形
-ctx.fillRect(x,y,width,height);   填充矩形
-ctx.clearRect(x,y,width,height); 清除绘制的矩形区域,橡皮擦功能
-ctx.clearRect(0,0,cas.width,cas.height);清除整个画布
-cas.width = cas.width;  相当于把画布刷新，也可以清除整个画布
-</code></pre><p>##绘制圆弧</p>
-<pre><code>ctx.arc(x,y,r,startAngle,endAngle,clockWise);   需要描边呈现
-x,y圆心坐标;r圆弧半径；startAngle圆开始角度；endAngle圆结束角度(需要转换为弧度) ；Math.PI = 180度   radian = angle * Math.PI /180；
-</code></pre><p>##绘制文本</p>
-<pre><code>ctx.strokeText(文本，x,y);  文本字符串的左下角在x,y坐标处；文本内容空心
-ctx.fillText(文本，x,y);   实心文本内容
-ctx.font = &apos;30px 黑体&apos;;   设置字体样式  大小、字体
-ctx.textAlign水平对齐 取值left center right ； start end 默认为start  
-ctx.textBaseline基线对齐 取值 top  middle bottom alphabetic(基线对齐)
-ctx.measureText(文本).width；获取当前文本的宽度
-</code></pre><p>##图片绘制</p>
-<pre><code>1.创建图片对象  var  img = new Image(); 
-2.img.src = &apos;...&apos;
-3.1 ctx.drawImage(img,x,y);  将图片绘制到x,y的位置
-3.2 ctx.drawImage(img,x,y,width,height); 将图片绘制到矩形区域，
-进行计算，等比缩放，
-3.3 ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h); 将图片的某个部分
-绘制到canvas中，一般截取的部分宽高与绘制的宽高一致
-drawImage不仅可以绘制图片，也可以绘制其他其它标签，例video、canvas等
-</code></pre><p>##变换</p>
-<pre><code>变换操作的是坐标轴，当坐标轴发生了变化以后，坐标轴内的图形也会跟着变化
-ctx.translate()  平移变换
-ctx.rotate()  旋转变换
-ctx.scale()   伸缩变换
-</code></pre><p>##canvas状态</p>
-<pre><code>canvas中，凡是设置属性，都会延续到下一次修改。
-ctx.save()  将当前状态保存   代码开始使用
-ctx.restore()  将保存的状态恢复   代码结束使用
-save 和 restore搭配使用，可以使上一次操作不影响下一次的
-</code></pre>
+        <p>##使用npm安装指定版本的angular<br>    npm install angular@1.4.7   可以安装指定版本为1.4.7的文件，@后跟版本号</p>
+<p>##在gulpfile.js文件中配置gulp<br>    所有引用的gulp插件以及gulp都需要使用npm进行局部安装，然后在根目录创建<br>    gulpfile.js，在文件中配置任务，在本文件夹下打开的命令窗口输入gulp [任务名]<br>    例：gulp script  就可以执行名称为script的任务</p>
+<p>###1.引入gulp模块<br>    var gulp = require(‘gulp’);</p>
+<p>###2.引入其他gulp插件<br>    1.//引入js压缩插件gulp-uglify<br>      var uglify = require(‘gulp-uglify’);<br>    2.//引入css压缩插件gulp-cssnano<br>      var cssnano = require(‘gulp-cssnano’);<br>    3.//引入html压缩插件<br>      var htmlmin = require(‘gulp-htmlmin’);<br>    4.//引入合并插件gulp-concat<br>      var concat = require(‘gulp-concat’);<br>    5.//引入文件重命名文件gulp-rename<br>      var rename = require(‘gulp-rename’);<br>    6.//引入js代码错误提醒插件<br>      var jshint = require(‘gulp-jshint’);<br>    7.//引入文件重命名插件<br>      var imagemin = require(‘gulp-imagemin’);<br>    8.//引入更改提醒插件<br>      var notify = require(‘gulp-notify’);<br>    9.//引入浏览器自动刷新插件<br>      var browserSync = require(‘browser-sync’).create();<br>      var reload = browserSync.reload;<br>    其它插件：用法见<a href="https://www.npmjs.com/search?q=gulp" target="_blank" rel="external">https://www.npmjs.com/search?q=gulp</a><br>      sass的编译（gulp-sass）<br>      less编译 （gulp-less）<br>      自动添加css前缀（gulp-autoprefixer）<br>      压缩图片（gulp-imagemin）<br>      自动刷新页面（gulp-livereload，谷歌浏览器亲测，谷歌浏览器需安装livereload插件）<br>      图片缓存，只有图片替换了才压缩（gulp-cache）</p>
+<p>###创建任务<br>    1.html压缩   htmlmin使用<br>    gulp.task(‘html’,function(){  //task方法是创建任务的实现方式<br>       gulp.src(‘./index.html’)<br>       //src方法获取文件，此处获取同文件夹下的index，html文件<br>       .pipe(htmlmin({collapseWhitespace:true})) //去除html中的空白符<br>       .pipe(gulp.dest(‘./dist’))<br>       //dest方法，指定压缩后的文件存放路径，次例：如果没有dist文件夹会自动创建<br>       .pipe(notify(‘hello html’));//任务完成后提醒插件使用<br>    });<br>    2.rename实例   更改html的名称<br>    gulp.task(‘rename’,function(){<br>        gulp.src(‘./index.html’)  //获取文件<br>          .pipe(rename({<br>            direname:”./“,     //所在目录<br>            basename:”aloha”,  //<br>            prefix:”bonjour-“, //<br>            suffix:”-hola”,   //<br>            extname:”.html”   //  后缀名<br>            }))    //效果生成bonjour-aloha-hola.html文件名<br>          .pipe(gulp.dest(‘./‘));  //更改后文件存放在本目录<br>    });<br>    3.css压缩<br>    gulp.task(‘styles’,function(){<br>        gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>           .pipe(cssnano()) //  压缩css代码<br>           .pipe(gulp.dest(‘./dist/css’)) //  压缩后保存目录<br>           .pipe(browserSync.stream()) //   css改变后，浏览器能收到修改信息<br>           .pipe(notify(‘css complete’))  //  任务完成提醒<br>    });<br>    4.js语法检测、代码合并、压缩<br>    gulp.task(‘scripts’, function() {<br>        //合并操作的方法，此处不执行<br>        //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>        //.pipe(concat(‘all.js’))  //合并后名称<br>        gulp.src(‘js/</em>.js’)<br>            .pipe(jshint()) // 进行检查<br>            .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>            .pipe(uglify())   //js代码压缩<br>            .pipe(gulp.dest(‘./dist/js’))<br>            .pipe(browserSync.stream());  //js代码更新，浏览器能收到修改信息<br>    });<br>    5.图片:压缩<br>    gulp.task(‘images’, function() {<br>        gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>          .pipe(imagemin())<br>          .pipe(gulp.dest(‘dist/images’))<br>    });<br>    6.主任务<br>    // 主任务<br>    gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’, ‘images’], function() {<br>        //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>        //的任务，然后再执行下面的代码(称之为任务依赖)<br>         browserSync.init({   //初始化浏览器自动更新操作<br>            server: “./dist”   //要管理的文件属于哪个文件夹<br>         });<br>         //当指定的文件发送改变时执行指定任务<br>        gulp.watch(‘./index.html’, [‘html’]);<br>        gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>        gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        //当任意html文件发送变化刷新浏览器<br>        gulp.watch(“./*.html”).on(‘change’, browserSync.reload);<br>    });</p>
+
       
     </div>
     
@@ -692,10 +580,10 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
 
 
   
-    <article id="post-ieBug" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ajax" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/ieBug/" class="article-date">
+      <a href="/2017/08/08/ajax/" class="article-date">
   	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
@@ -709,8 +597,8 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/ieBug/">
-        ieBug
+      <a class="article-title" href="/2017/08/08/ajax/">
+        ajax
         
       </a>
     </h1>
@@ -721,8 +609,8 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###IE中不支持placeholder属性<br>    通过js控制,检测是否支持,不支持则扩增方法实现,通过失去焦点的获取焦点实现.</p>
-<p>###IE ajax会有缓存<br>    如果ajax没有参数,需加上随机参数,不然不会重新访问接口</p>
+        <p>###ajax错误统一处理<br>    $(document).ajaxError(function (event, xhr, options, exc) {<br>        if (!/^\/account\/myAsset/.test(options.url)) {<br>            window.location.reload();<br>        }<br>        // if(xhr.status == 200){<br>        // }<br>    });</p>
+<p>###ajax请求结束配置<br>     $(document).ajaxComplete( function(event, jqXHR, options){<br>        // ajax请求结束统一处理函数<br>        var redirectUrl = jqXHR.getResponseHeader(“redirectUrl”);<br>        if (redirectUrl !== null &amp;&amp; !/^\/account\/myAsset/.test(options.url)) {<br>            window.location.href = redirectUrl;<br>        }<br>    } );</p>
 
       
     </div>
@@ -748,10 +636,10 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
 
 
   
-    <article id="post-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-gulp使用配置信息" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/08/08/javascript/" class="article-date">
+      <a href="/2017/08/08/gulp使用配置信息/" class="article-date">
   	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
     </div>
@@ -765,8 +653,8 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/javascript/">
-        javascript
+      <a class="article-title" href="/2017/08/08/gulp使用配置信息/">
+        gulp配置信息
         
       </a>
     </h1>
@@ -777,10 +665,65 @@ save 和 restore搭配使用，可以使上一次操作不影响下一次的
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###返回上一页并刷新<br>    <a href="javascript:" onclick="self.location=document.referrer;" target="_blank" rel="external"></a> </p>
-<p>###处理只能输入数字的方法<br>     function treadDeal($this) {<br>            var oldStr = $this.val();<br>            var newStr = oldStr.replace(/[^0-9]/g, ‘’);<br>            if (oldStr !== newStr) {<br>                $this.val(newStr);<br>            }<br>        }</p>
-<p>###修改Number的toFixed方法,不四舍五入,直接截取<br>    Number.prototype.toFixed = function (num) {<br>        var str = this.toString();<br>        if (!/./.test(str)) {<br>            // 不是小数<br>            str += ‘.’;<br>            for (var i = 0; i &lt; num; i++) {<br>                str += ‘0’;<br>            }<br>            return str;<br>        }<br>        str = str.substring(0, str.lastIndexOf(‘.’) + num + 1);<br>        var start = str.substring(str.lastIndexOf(‘.’) + 1).length;<br>        for (var j = start; j &lt; num; j++) {<br>            str += ‘0’;<br>        }<br>        return str;<br>    };</p>
-<p>###匹配金额的正则表达式<br>     $(“input”).keyup(function () {<br>        // 限制只能输入前8位<br>                var str = $(this).val();<br>                if (/\d{9}/.test(str)) {<br>                    $(this).val(str.substr(0, 8) + str.substr(9));<br>                }<br>                // 限制输入数字或点<br>                var reg = $(this).val().match(/\d+.?\d{0,2}/);<br>                var str1 = $(this).val();<br>                var txt = ‘’;<br>                if (reg != null) {<br>                    txt = reg[0];<br>                    console.log(txt);<br>                    console.log(reg);<br>                }<br>                // if (txt &amp;&amp; /^0[1-9]/.test(txt)) {<br>                //     txt = txt[1];<br>                // }<br>                if(str1 !== txt){<br>                    $(this).val(txt);<br>                }<br>    }).change(function () {<br>        var v = $(this).val();<br>                if (/.$/.test(v)) {<br>                    $(this).val(v.substr(0, v.length - 1));<br>                }<br>                 if(v){<br>                    v = +parseFloat(v + ‘’);<br>                }<br>                $(this).val(v);<br>    });</p>
+        <p>###配置gulp</p>
+<p>####先安装好各个依赖的插件<br>    1.首先安装node环境，安装gulp插件使用npm进行<br>    2.进入工作目录，在此处打开命令行<br>    3.使用npm管理该文件夹，npm init -y 快速生成package.json文件<br>    4.通过npm安装各个gulp的插件<br>    npm install gulp –save-dev //基础库<br>    npm install gulp-htmlmin –save-dev  //html压缩<br>    npm install gulp-csso –save-dev  //css压缩<br>    npm install jshint gulp-jshint –save-dev  //js检查<br>    npm install gulp-uglify –save-dev  //js压缩<br>    npm install gulp-concat –save-dev  //文件合并<br>    npm install gulp-clean –save-dev  //清空文件夹<br>    npm install gulp-imagemin –save-dev  //图片压缩<br>    npm install gulp-rename –save-dev  //文件重命名<br>    npm install gulp-rev –save-dev  //更改版本名<br>    npm install gulp-rev-collector –save-dev<br>    //gulp-rev的插件，用于HTML模板更改引用路径</p>
+<p>####在当前文件夹的根目录下建立gulpfile.js文件，进行配置<br>    1.首先将各个依赖的插件引入<br>    var gulp = require(‘gulp’),  //基础库<br>        htmlmin = require(‘gulp-htmlmin’),//html压缩<br>        csso = require(‘gulp-csso’), //css压缩<br>        jshint = require(‘gulp-jshint’), //js检查<br>        uglify = require(‘gulp-uglify’), //js压缩<br>        concat = require(‘gulp-concat’), //文件合并<br>        clean = require(‘gulp-clean’), //清空文件夹<br>        imagemin = require(‘gulp-imagemin’), //图片压缩<br>        rename = require(‘gulp-rename’), //文件重命名<br>        rev = require(‘gulp-rev’), //更改版本名<br>        revCollector = require(‘gulp-rev-collector’); //gulp-rev的插件，用于HTML模板更改引用路径<br>    2.开始配置任务<br>    // 1.html压缩   htmlmin使用<br>        gulp.task(‘html’, function () {  //task方法是创建任务的实现方式<br>            var options = {<br>                collapseWhitespace:true,<br>                collapseBooleanAttributes:true,<br>                removeComments:true,<br>                removeEmptyAttributes:true,<br>                removeScriptTypeAttributes:true,<br>                removeStyleLinkTypeAttributes:true,<br>                minifyJS:true,<br>                minifyCSS:true<br>            };<br>            return gulp.src(‘index.html’)<br>            //src方法获取文件，此处获取同文件夹下的index，html文件<br>                .pipe(htmlmin(options)) //去除html中的空白符<br>                .pipe(gulp.dest(‘dist/‘));<br>                //dest方法，指定压缩后的文件存放路径，此时：如果没有dist文件夹会自动创建<br>        });<br>        //2.css压缩<br>        gulp.task(‘styles’, function () {<br>            return gulp.src(‘./css/<em>.css’)  //选择所有css目录下的css文件<br>                .pipe(csso()) //  压缩css代码<br>                // 此处不要修改文件名称，不然下面rev任务自动替换引用文件时会找不到要替换的内容<br>                // .pipe(rename(function (path) {<br>                //     path.basename += ‘.min’;<br>                //     path.extname = ‘.css’<br>                // }))<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/css’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/css’));<br>        });<br>        // 3.js语法检测、代码合并、压缩<br>        gulp.task(‘scripts’, function () {<br>            //合并操作的方法，此处不执行<br>            //gulp.src([‘./demo.js’,’./index.js’])//要合并操作的文件<br>            //.pipe(concat(‘all.js’))  //合并后名称<br>            return gulp.src(‘./js/</em>.js’)<br>                .pipe(jshint()) // 进行检查<br>                .pipe(jshint.reporter(‘default’)) // 对代码进行报错提示<br>                .pipe(uglify())   //js代码压缩<br>                .pipe(rev())<br>                .pipe(gulp.dest(‘./dist/js’))//  压缩后保存目录<br>                .pipe(rev.manifest())<br>                .pipe(gulp.dest(‘./rev/js’));<br>        });<br>        // 4.图片:压缩<br>        gulp.task(‘images’, function() {<br>            gulp.src(‘./images/<em>.</em>‘)  //选的images文件夹下的所有图片<br>                .pipe(imagemin())<br>                .pipe(gulp.dest(‘dist/images’))<br>        });<br>        //5. rev使用，自动改变HTML文件中的引用路径<br>        gulp.task(‘rev’,function () {<br>            return gulp.src([‘./rev/<em>*/</em>.json’,’./dist/index.html’])<br>                .pipe(revCollector({<br>                    replaceReved:true<br>                }))<br>                .pipe(rename(function (path) {<br>                    path.basename += ‘.min’;<br>                    path.extname = ‘.html’<br>                }))<br>                .pipe(gulp.dest(‘./dist’));<br>        });<br>        // 主任务，只需在命令行执行此任务就能实现压缩代码，rev任务除外<br>        gulp.task(‘default’, [‘html’, ‘styles’, ‘scripts’,’images’, ‘rev’], function () {<br>            //在执行default任务时，先执行[‘html’, ‘styles’, ‘scripts’, ‘images’]<br>            //的任务，然后再执行下面的代码(称之为任务依赖)<br>            //当指定的文件发送改变时执行指定任务<br>            gulp.watch(‘./index.html’, [‘html’]);<br>            gulp.watch(‘./css/<em>.css’, [‘styles’]);<br>            gulp.watch(‘./js/</em>.js’, [‘scripts’]);<br>        });</p>
+<p>###注意：在执行完default主任务后没有实现HTML中路径自动改变，需要单独执行rev任务才能为HTML引入的文件自动加上版本号</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-localStorage" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/08/localStorage/" class="article-date">
+  	<time datetime="2017-08-08T10:32:40.000Z" itemprop="datePublished">2017-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/08/localStorage/">
+        localStorage
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###缓存处理<br>    function setStroage(key, value) {<br>        var user = JSON.parse(localStorage.getItem(‘userinfo’)) || {};<br>        user[key] = value;<br>        localStorage.setItem(‘userinfo’, JSON.stringify(user));<br>    }<br>    function getStroage(key) {<br>        var data = JSON.parse(localStorage.getItem(‘userinfo’));<br>        if (data) {<br>            return data[key];<br>        }<br>    }<br>    function deleteStroage() {<br>        localStorage.removeItem(‘userinfo’);<br>    }</p>
 
       
     </div>
